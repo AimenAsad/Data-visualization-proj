@@ -2,7 +2,7 @@
 
 This interactive dashboard empowers users to effortlessly visualize and explore their flat JSON data through a suite of advanced D3.js charts. Designed for intuitive data exploration, it supports dynamic field detection, coordinated brushing & linking, and a responsive layout.
 
-data/dashboard.jpeg
+![Dashboard Overview](data/dashboard.jpeg)
 
 ---
 
