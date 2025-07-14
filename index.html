@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive D3 Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+  <h1>Interactive D3 Dashboard</h1>
+
+  <!-- CONTROL PANEL -->
+  <div id="control-panel">
+    <button id="choose-file">Choose JSON File</button>
+    <input type="file" id="file-input" accept=".json" style="display:none" />
+    <div id="controls"></div>
+  </div>
+
+  <!-- CHART GRID -->
+  <div id="charts">
+    <div id="radial-bar"></div>
+    <div id="chord-diagram"></div>
+    <div id="force-graph"></div>
+    <div id="sunburst-chart"></div>
+  </div>
+
+  <!-- MODULE SCRIPTS -->
+  <script src="js/radial_bar.js"></script>
+  <script src="js/chord.js"></script>
+  <script src="js/force_directed.js"></script>
+  <script src="js/sunburst.js"></script>
+  <script src="js/dashboard.js"></script>
+
+  <script>
+    document.getElementById('choose-file')
+      .addEventListener('click', () => document.getElementById('file-input').click());
+  </script>
+</body>
+</html>
